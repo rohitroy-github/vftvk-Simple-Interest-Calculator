@@ -1,7 +1,7 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
-
+    //if principal entered in null or -ve
     if(principal == "" || principal <= 0)
     {
         alert("Enter a positive number");
@@ -11,6 +11,7 @@ function compute()
 
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
+    //calculation for SI
     var interest = principal * years * rate / 100;
 
     var dateNow = new Date();
@@ -23,7 +24,7 @@ function compute()
 function SliderValue()
 {
     var slider = document.getElementById("rate");
-    var output = document.getElementById("rate_display");
+    var output = document.getElementById("rate_val");
     output.innerHTML = slider.value; // Display the default slider value
 
     // Update the current slider value (each time you drag the slider handle)

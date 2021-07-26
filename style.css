@@ -15,6 +15,7 @@ h1
 {
     background-color: #ffffff;
     color: #000000;
+    /*300px was too small so increased it further to 500px*/
     width: 500px;
     padding: 20px;
     border-radius: 25px;

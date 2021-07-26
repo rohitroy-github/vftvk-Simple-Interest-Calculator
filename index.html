@@ -1,4 +1,4 @@
-
+<!--Rohit Roy-->
 <!DOCTYPE html>
 <head>
     <title>Simple Interest Calculator</title>
@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--All the contents are inside 'maindiv' block as required-->
     <div class="maindiv">
         <h1>Simple Interest Calculator</h1>
 
@@ -13,20 +14,20 @@
             <table id="table">
                 <tbody>
                     <tr>
-                        <td class="labels">Amount </td>
+                        <td class="labels">Amount   </td>
                         <td>
                             <input type="number" id="principal">
                         </td>
                     </tr>
                     <tr>
-                        <td class="labels">Interest Rate </td>
+                        <td class="labels">Interest Rate    </td>
                         <td>
                             <input type="range" min="1" max="20" step="0.25" value="10.25" id="rate" name="rate" onchange="SliderValue()"> 
                             <span id="rate_display">10.25%</span>
                         </td>
                     </tr>
                     <tr>
-                        <td class="labels">No. of Years</td>
+                        <td class="labels">No. of Years </td>
                         <td>
                             <select name="years" id="years">
                                 <option value="1">1</option>
@@ -46,12 +47,14 @@
             </table>
 
 
-            <button id="compute" onclick="compute()">Calculate Interest</button> <br>
+            <button id="compute" onclick="compute()">Compute Interest</button> <br>
             <span id="result">
             </span>
         </div>
-
-        
+        <footer>
+            &#169; This Calculator belongs to Rohit Roy  
+        </footer>   
     </div>
+    <!--'maindiv' ends here-->
 </body>
 </html>
