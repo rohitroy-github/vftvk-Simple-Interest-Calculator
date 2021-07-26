@@ -2,6 +2,7 @@ function compute()
 {
     var principal = document.getElementById("principal").value;
     //if principal entered in null or -ve
+    //alert message dialogue box
     if(principal == "" || principal <= 0)
     {
         alert("Enter a positive number");
@@ -14,6 +15,7 @@ function compute()
     //calculation for SI
     var interest = principal * years * rate / 100;
 
+    //updating to current date 
     var dateNow = new Date();
     var yearNow = parseInt(dateNow.getFullYear()) + parseInt(years);
     
